@@ -1,0 +1,20 @@
+.top-menu {
+  width: 100%;
+  background-color: $black;
+
+  &__list {
+    max-width: $desktop-max-width;
+    margin: 0 auto;
+  }
+
+  &__item {
+    padding: rem(12) 0;
+
+    a {
+      @include b4;
+      color: $white;
+      border-left: rem(1) solid $white;
+      padding: 0 rem(8);
+    }
+  }
+}
