@@ -1,0 +1,116 @@
+.product-item {
+  width: 100%;
+  position: relative;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thumb {
+    width: vw(304);
+    height: vw(304);
+
+    &--new01 {
+      @include bg("new01.jpg", center);
+      background-size: cover;
+      transition: 0.2s;
+
+      &:hover {
+        @include bg("new01-hover.jpeg", center);
+        background-size: cover;
+      }
+    }
+
+    &--new02 {
+      @include bg("new02.jpg", center);
+      background-size: cover;
+      transition: 0.2s;
+
+      &:hover {
+        @include bg("new02-hover.jpeg", center);
+        background-size: cover;
+      }
+    }
+
+    &--new03 {
+      @include bg("new03.jpg", center);
+      background-size: cover;
+      transition: 0.2s;
+
+      &:hover {
+        @include bg("new03-hover.jpeg", center);
+        background-size: cover;
+      }
+    }
+
+    &--new04 {
+      @include bg("new04.jpg", center);
+      background-size: cover;
+      transition: 0.2s;
+
+      &:hover {
+        @include bg("new04-hover.jpeg", center);
+        background-size: cover;
+      }
+    }
+
+    &--new05 {
+      @include bg("new05.jpeg", center);
+      background-size: cover;
+      transition: 0.2s;
+
+      &:hover {
+        @include bg("new05-hover.jpeg", center);
+        background-size: cover;
+      }
+    }
+
+    &--new06 {
+      @include bg("new06.jpeg", center);
+      background-size: cover;
+      transition: 0.2s;
+
+      &:hover {
+        @include bg("new06-hover.jpeg", center);
+        background-size: cover;
+      }
+    }
+
+    &--new07 {
+      @include bg("new07.jpeg", center);
+      background-size: cover;
+      transition: 0.2s;
+
+      &:hover {
+        @include bg("new07-hover.jpeg", center);
+        background-size: cover;
+      }
+    }
+  }
+
+  .info {
+    width: vw(304);
+
+    .caption {
+      @include b2;
+      color: $red;
+      font-weight: 700;
+      margin-top: rem(12);
+    }
+
+    .title {
+      @include b3;
+      color: $grey700;
+      margin-top: rem(4);
+    }
+
+    .price {
+      @include b3;
+      color: $grey700;
+      font-weight: 700;
+      margin-top: rem(16);
+    }
+  }
+}
