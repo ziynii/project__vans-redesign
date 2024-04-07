@@ -1,0 +1,26 @@
+.new-arrival {
+  margin-top: rem(80);
+  width: 90%;
+  margin: rem(80) auto 0;
+  overflow: hidden;
+  position: relative;
+
+  .tns-liveregion {
+    display: none;
+  }
+
+  &__slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .slide-controls {
+    .btn--prev {
+      @include position(left, rem(-8), top, 50%);
+    }
+
+    .btn--next {
+      @include position(right, rem(-8), top, 50%);
+    }
+  }
+}
