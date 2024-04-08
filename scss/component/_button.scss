@@ -1,0 +1,46 @@
+.btn {
+  &--menu {
+    @include bg("ico_menu.svg");
+    width: rem(24);
+    height: rem(24);
+  }
+
+  &--cart {
+    @include bg("ico_cart.svg");
+    width: rem(24);
+    height: rem(24);
+  }
+
+  &--heart {
+    @include bg("ico_heart.svg");
+    width: rem(24);
+    height: rem(24);
+    transition: 0.1s;
+
+    &:hover {
+      @include bg("ico_heart-hover.svg");
+    }
+  }
+
+  &--search {
+    @include bg("ico_search.svg");
+    width: rem(24);
+    height: rem(24);
+
+    .header & {
+      margin-left: rem(8);
+    }
+  }
+
+  &--prev {
+    @include bg("ico_chevron-left.svg");
+    width: rem(24);
+    height: rem(24);
+  }
+
+  &--next {
+    @include bg("ico_chevron-right.svg");
+    width: rem(24);
+    height: rem(24);
+  }
+}
