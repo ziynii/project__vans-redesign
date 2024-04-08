@@ -1,0 +1,55 @@
+.product-slide {
+  width: 90%;
+  margin: rem(100) auto 0;
+  position: relative;
+
+  @include responsive(T) {
+    max-width: $tablet-max-width;
+  }
+
+  @include responsive(D) {
+    max-width: $desktop-max-width;
+  }
+
+  .tns-liveregion {
+    display: none;
+  }
+
+  #tns1-iw,
+  #tns2-iw {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(24);
+  }
+
+  .slide-controls {
+    .btn--prev {
+      @include position(left, rem(-16), top, 50%);
+
+      @include responsive(T) {
+        @include position(left, rem(-32), top, 50%);
+      }
+
+      @include responsive(D) {
+        @include position(left, rem(-48), top, 50%);
+      }
+    }
+
+    .btn--next {
+      @include position(right, rem(-16), top, 50%);
+
+      @include responsive(T) {
+        @include position(right, rem(-32), top, 50%);
+      }
+
+      @include responsive(D) {
+        @include position(right, rem(-48), top, 50%);
+      }
+    }
+  }
+}
