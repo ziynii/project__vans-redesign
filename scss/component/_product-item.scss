@@ -2,6 +2,15 @@
   width: 100%;
   position: relative;
 
+  @include responsive(T) {
+    padding: rem(8);
+    border: 1px solid transparent;
+
+    &:hover {
+      border-color: $red;
+    }
+  }
+
   a {
     display: flex;
     flex-direction: column;
@@ -12,86 +21,36 @@
     width: vw(304);
     height: vw(304);
 
-    &--new01 {
-      @include bg("new01.jpg", center);
-      background-size: cover;
-      transition: 0.2s;
+    @include responsive(T) {
+      width: 100%;
+      height: 100%;
+    }
 
-      &:hover {
-        @include bg("new01-hover.jpeg", center);
-        background-size: cover;
+    &:hover {
+      .thumb--primary {
+        display: none;
+      }
+
+      .thumb--hover {
+        display: block;
       }
     }
 
-    &--new02 {
-      @include bg("new02.jpg", center);
-      background-size: cover;
-      transition: 0.2s;
-
-      &:hover {
-        @include bg("new02-hover.jpeg", center);
-        background-size: cover;
-      }
+    img {
+      width: 100%;
     }
 
-    &--new03 {
-      @include bg("new03.jpg", center);
-      background-size: cover;
-      transition: 0.2s;
-
-      &:hover {
-        @include bg("new03-hover.jpeg", center);
-        background-size: cover;
-      }
-    }
-
-    &--new04 {
-      @include bg("new04.jpg", center);
-      background-size: cover;
-      transition: 0.2s;
-
-      &:hover {
-        @include bg("new04-hover.jpeg", center);
-        background-size: cover;
-      }
-    }
-
-    &--new05 {
-      @include bg("new05.jpeg", center);
-      background-size: cover;
-      transition: 0.2s;
-
-      &:hover {
-        @include bg("new05-hover.jpeg", center);
-        background-size: cover;
-      }
-    }
-
-    &--new06 {
-      @include bg("new06.jpeg", center);
-      background-size: cover;
-      transition: 0.2s;
-
-      &:hover {
-        @include bg("new06-hover.jpeg", center);
-        background-size: cover;
-      }
-    }
-
-    &--new07 {
-      @include bg("new07.jpeg", center);
-      background-size: cover;
-      transition: 0.2s;
-
-      &:hover {
-        @include bg("new07-hover.jpeg", center);
-        background-size: cover;
-      }
+    &--hover {
+      display: none;
     }
   }
 
   .info {
     width: vw(304);
+
+    @include responsive(T) {
+      width: 100%;
+    }
 
     .caption {
       @include b2;
