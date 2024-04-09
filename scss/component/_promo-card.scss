@@ -1,0 +1,55 @@
+.promotion__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: rem(394);
+  height: rem(694);
+
+  &-thumb {
+    width: rem(394);
+    height: rem(491);
+
+    &.card01 {
+      @include bg("card-ave.png", center);
+      background-size: cover;
+    }
+
+    &.card02 {
+      @include bg("card-neo.png", center);
+      background-size: cover;
+    }
+
+    &.card03 {
+      @include bg("card-rowley.png", center);
+      background-size: cover;
+    }
+  }
+
+  &-title {
+    @include h3;
+    color: $grey700;
+    text-align: center;
+    margin-top: rem(16);
+  }
+
+  &-description {
+    @include b2;
+    color: $grey700;
+    text-align: center;
+    margin-top: rem(12);
+  }
+
+  &-btn {
+    @include b2;
+    color: $white;
+    background-color: $black;
+    margin-top: rem(48);
+    padding: rem(8) rem(24);
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $red;
+    }
+  }
+}

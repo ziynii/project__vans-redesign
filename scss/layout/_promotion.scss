@@ -1,0 +1,17 @@
+.promotion {
+  &__list {
+    display: flex;
+    max-width: calc(100% - rem(16));
+    overflow-x: auto;
+    margin: rem(80) auto 0;
+    gap: rem(8);
+
+    @include responsive(T) {
+      max-width: $tablet-max-width;
+    }
+
+    @include responsive(D) {
+      max-width: $desktop-max-width;
+    }
+  }
+}
