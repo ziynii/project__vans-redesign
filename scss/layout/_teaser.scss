@@ -1,0 +1,43 @@
+.teaser {
+  margin: rem(80) rem(8) 0 rem(8);
+
+  &__content {
+    margin-top: rem(32);
+    display: flex;
+    max-height: rem(423);
+    gap: rem(4);
+
+    @include responsive(T) {
+      max-width: $tablet-max-width;
+      margin: rem(32) auto 0 auto;
+      max-height: rem(560);
+    }
+
+    @include responsive(D) {
+      max-width: $desktop-max-width;
+      margin: rem(32) auto 0 auto;
+      max-height: rem(780);
+    }
+
+    &-left {
+      width: 50%;
+    }
+
+    &-right {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: rem(4);
+
+      .teaser-card {
+        height: calc(50% - rem(2));
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
