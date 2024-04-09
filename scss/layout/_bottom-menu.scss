@@ -1,5 +1,24 @@
 .bottom-menu {
   margin: rem(80) rem(8) 0 rem(8);
+  display: flex;
+  flex-direction: column;
+
+  @include responsive(T) {
+    max-width: $tablet-max-width;
+    margin: rem(80) auto 0 auto;
+  }
+
+  @include responsive(D) {
+    flex-direction: row;
+    max-width: $desktop-max-width;
+    gap: rem(24);
+  }
+
+  &__list {
+    @include responsive(D) {
+      width: 65%;
+    }
+  }
 
   &__item {
     @include h3;
@@ -13,6 +32,20 @@
 
   &__cm {
     margin-top: rem(32);
+    display: flex;
+    flex-direction: column;
+
+    @include responsive(D) {
+      width: 35%;
+    }
+
+    @include responsive(T) {
+      flex-direction: row-reverse;
+    }
+
+    @include responsive(D) {
+      flex-direction: column;
+    }
 
     .title {
       @include h4;
@@ -28,6 +61,14 @@
         width: 100%;
         position: relative;
         margin-top: rem(24);
+
+        @include responsive(T) {
+          max-width: rem(368);
+        }
+
+        @include responsive(D) {
+          max-width: 100%;
+        }
 
         input {
           @include b2;
@@ -57,6 +98,14 @@
 
     .follow {
       margin-top: rem(24);
+
+      @include responsive(T) {
+        margin-top: 0;
+      }
+
+      @include responsive(D) {
+        margin-top: rem(60);
+      }
 
       &__icons {
         margin-top: rem(24);
