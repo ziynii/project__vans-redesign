@@ -1,0 +1,94 @@
+.bottom-menu {
+  margin: rem(80) rem(8) 0 rem(8);
+
+  &__item {
+    @include h3;
+    color: $grey700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(24) rem(8);
+    border-bottom: rem(1) solid $grey400;
+  }
+
+  &__cm {
+    margin-top: rem(32);
+
+    .title {
+      @include h4;
+    }
+
+    .news-letter {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      &__input {
+        width: 100%;
+        position: relative;
+        margin-top: rem(24);
+
+        input {
+          @include b2;
+          width: 100%;
+          padding: rem(8) rem(4);
+          border-bottom: rem(1) solid $grey400;
+
+          &:focus {
+            outline: none;
+            border-color: $grey700;
+
+            ~ .btn--right {
+              opacity: 1;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .btn--right {
+          @include position(right, rem(8), top, 50%);
+          opacity: 0;
+          cursor: text;
+          transition: 0.2s;
+        }
+      }
+    }
+
+    .follow {
+      margin-top: rem(24);
+
+      &__icons {
+        margin-top: rem(24);
+        display: flex;
+
+        .icon {
+          width: rem(48);
+          height: rem(48);
+          border: rem(1) solid $grey700;
+          cursor: pointer;
+
+          &:not(:last-child) {
+            border-right: none;
+          }
+
+          &.facebook {
+            @include bg("ico_facebook.svg", center);
+          }
+
+          &.naver {
+            @include bg("ico_naver.svg", center);
+          }
+
+          &.kakao {
+            @include bg("ico_kakao.svg", center);
+          }
+
+          &.insta {
+            @include bg("ico_insta.svg", center);
+          }
+        }
+      }
+    }
+  }
+}
