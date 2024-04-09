@@ -44,6 +44,18 @@
     height: rem(24);
   }
 
+  &--bottom {
+    @include bg("ico_arrow-bottom.svg");
+    width: rem(24);
+    height: rem(24);
+  }
+
+  &--right {
+    @include bg("ico_arrow-right.svg");
+    width: rem(24);
+    height: rem(24);
+  }
+
   &--outline {
     display: block;
     padding: rem(4) rem(8);
