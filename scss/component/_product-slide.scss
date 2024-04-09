@@ -29,7 +29,7 @@
 
   .slide-controls {
     .btn--prev {
-      @include position(left, rem(-16), top, 50%);
+      @include position(left, rem(-24), top, 50%);
 
       @include responsive(T) {
         @include position(left, rem(-32), top, 50%);
@@ -41,7 +41,7 @@
     }
 
     .btn--next {
-      @include position(right, rem(-16), top, 50%);
+      @include position(right, rem(-24), top, 50%);
 
       @include responsive(T) {
         @include position(right, rem(-32), top, 50%);
