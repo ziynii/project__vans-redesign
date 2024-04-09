@@ -49,5 +49,9 @@
     padding: rem(4) rem(8);
     background-color: transparent;
     border: rem(1) solid $white;
+
+    @include responsive(D) {
+      padding: rem(8) rem(16);
+    }
   }
 }
