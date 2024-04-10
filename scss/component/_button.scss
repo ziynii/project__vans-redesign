@@ -48,6 +48,11 @@
     @include bg("ico_arrow-bottom.svg");
     width: rem(24);
     height: rem(24);
+    transition: 0.3s;
+
+    &.active {
+      transform: rotate(-180deg);
+    }
   }
 
   &--right {
