@@ -24,8 +24,8 @@
     @include h3;
     color: $grey700;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     padding: rem(24) rem(8);
     border-bottom: rem(1) solid $grey400;
   }
@@ -76,6 +76,10 @@
           padding: rem(8) rem(4);
           border-bottom: rem(1) solid $grey400;
 
+          &::placeholder {
+            color: $grey400;
+          }
+
           &:focus {
             outline: none;
             border-color: $grey700;
@@ -123,18 +127,38 @@
 
           &.facebook {
             @include bg("ico_facebook.svg", center);
+            transition: 0.2s;
+
+            &:hover {
+              background-color: $grey50;
+            }
           }
 
           &.naver {
             @include bg("ico_naver.svg", center);
+            transition: 0.2s;
+
+            &:hover {
+              background-color: $grey50;
+            }
           }
 
           &.kakao {
             @include bg("ico_kakao.svg", center);
+            transition: 0.2s;
+
+            &:hover {
+              background-color: $grey50;
+            }
           }
 
           &.insta {
             @include bg("ico_insta.svg", center);
+            transition: 0.2s;
+
+            &:hover {
+              background-color: $grey50;
+            }
           }
         }
       }
