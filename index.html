@@ -520,24 +520,58 @@
     </section>
 
     <div class="bottom-menu">
-      <ul class="bottom-menu__list">
-        <li class="bottom-menu__item">
-          <p class="title">ABOUT</p>
-          <button class="btn--bottom"></button>
-        </li>
-        <li class="bottom-menu__item">
-          <p class="title">SHOPPING</p>
-          <button class="btn--bottom"></button>
-        </li>
-        <li class="bottom-menu__item">
-          <p class="title">LEGAL</p>
-          <button class="btn--bottom"></button>
-        </li>
-        <li class="bottom-menu__item">
-          <p class="title">CATEGORY</p>
-          <button class="btn--bottom"></button>
-        </li>
-      </ul>
+      <div class="bottom-menu__list">
+        <div class="bottom-menu__item">
+          <div class="align both">
+            <p class="title">ABOUT</p>
+            <button class="btn--bottom"></button>
+          </div>
+
+          <ul class="nest-menu__list">
+            <li class="nest-menu__item"><a href="#">반스에 대하여</a></li>
+            <li class="nest-menu__item"><a href="#">고객센터</a></li>
+          </ul>
+        </div>
+        <div class="bottom-menu__item">
+          <div class="align both">
+            <p class="title">SHOPPING</p>
+            <button class="btn--bottom"></button>
+          </div>
+
+          <ul class="nest-menu__list">
+            <li class="nest-menu__item"><a href="#">회원가입</a></li>
+            <li class="nest-menu__item"><a href="#">주문/배송 조회</a></li>
+          </ul>
+        </div>
+        <div class="bottom-menu__item">
+          <div class="align both">
+            <p class="title">LEGAL</p>
+            <button class="btn--bottom"></button>
+          </div>
+
+          <ul class="nest-menu__list">
+            <li class="nest-menu__item"><a href="#">이용약관</a></li>
+            <li class="nest-menu__item"><a href="#">개인정보처리방침</a></li>
+            <li class="nest-menu__item"><a href="#">청소년 보호정책</a></li>
+          </ul>
+        </div>
+        <div class="bottom-menu__item">
+          <div class="align both">
+            <p class="title">CATEGORY</p>
+            <button class="btn--bottom"></button>
+          </div>
+
+          <ul class="nest-menu__list">
+            <li class="nest-menu__item"><a href="#">NEW</a></li>
+            <li class="nest-menu__item"><a href="#">MEN</a></li>
+            <li class="nest-menu__item"><a href="#">WOMEN</a></li>
+            <li class="nest-menu__item"><a href="#">KIDS</a></li>
+            <li class="nest-menu__item"><a href="#">CUSTOM</a></li>
+            <li class="nest-menu__item"><a href="#">PREMIUM</a></li>
+            <li class="nest-menu__item"><a href="#">SALE</a></li>
+          </ul>
+        </div>
+      </div>
 
       <div class="bottom-menu__cm">
         <div class="news-letter">
@@ -569,7 +603,9 @@
       </div>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="js/product-slide.js"></script>
+    <script src="js/bottom-menu.js"></script>
   </body>
 </html>
