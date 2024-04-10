@@ -1,0 +1,25 @@
+.nest-menu {
+  &__list {
+    display: none;
+    padding: rem(16) 0;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__item {
+    padding: rem(4) 0;
+
+    a {
+      @include b2;
+      color: $grey700;
+    }
+
+    &:hover {
+      a {
+        color: $red;
+      }
+    }
+  }
+}
