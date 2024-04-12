@@ -1,0 +1,14 @@
+.section-title {
+  @include h4;
+  color: $grey700;
+
+  @include responsive(T) {
+    max-width: $tablet-max-width;
+    margin: 0 auto;
+  }
+
+  @include responsive(D) {
+    max-width: $desktop-max-width;
+    margin: 0 auto;
+  }
+}
