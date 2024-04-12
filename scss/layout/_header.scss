@@ -1,14 +1,36 @@
 .header {
   padding: rem(0) rem(8);
   box-shadow: $shadow-4px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.3s;
+  z-index: $header-level;
+  background-color: $white;
+
+  @include responsive(D) {
+    top: rem(41);
+  }
+
+  &.hide {
+    top: rem(-60);
+  }
+
+  &.show {
+    top: 0;
+  }
 
   &__content-wrap {
     position: relative;
     height: rem(60);
 
+    @include responsive(T) {
+      max-width: $tablet-max-width;
+      margin: 0 auto;
+    }
+
     @include responsive(D) {
       max-width: $desktop-max-width;
-      margin: 0 auto;
     }
   }
 

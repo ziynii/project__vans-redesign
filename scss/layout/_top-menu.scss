@@ -1,6 +1,13 @@
 .top-menu {
   width: 100%;
   background-color: $black;
+  position: fixed;
+  top: 0;
+  z-index: $header-level;
+
+  &.hide {
+    display: none;
+  }
 
   &__list {
     max-width: $desktop-max-width;
@@ -15,6 +22,10 @@
       color: $white;
       border-left: rem(1) solid $white;
       padding: 0 rem(8);
+
+      &:hover {
+        color: $grey300;
+      }
     }
   }
 }
