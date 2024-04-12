@@ -71,4 +71,18 @@
       padding: rem(8) rem(16);
     }
   }
+
+  &--chevron {
+    &-left {
+      @include bg("ico_btn-left.svg", center);
+      width: rem(42);
+      height: rem(42);
+    }
+
+    &-right {
+      @include bg("ico_btn-right.svg");
+      width: rem(42);
+      height: rem(42);
+    }
+  }
 }
