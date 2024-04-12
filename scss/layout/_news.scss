@@ -1,0 +1,51 @@
+.news {
+  margin: rem(80) rem(8) 0 rem(8);
+
+  &__slide {
+    margin: rem(24) auto 0 auto;
+    display: flex;
+
+    &-wrap {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+
+      @include responsive(T) {
+        max-width: $tablet-max-width;
+        margin: 0 auto;
+      }
+
+      @include responsive(D) {
+        max-width: $desktop-max-width;
+        margin: 0 auto;
+      }
+
+      .tns-liveregion {
+        display: none;
+      }
+    }
+
+    &-controls {
+      margin-top: rem(48);
+
+      @include responsive(T) {
+        position: absolute;
+        right: rem(8);
+        top: 65%;
+      }
+
+      @include responsive(D) {
+        right: rem(210);
+
+        button {
+          opacity: 0.6;
+          transition: 0.1s;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
