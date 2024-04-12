@@ -1,0 +1,73 @@
+.news__slide-item {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
+
+  @include responsive(T) {
+    flex-direction: row;
+  }
+
+  &__thumb {
+    width: 100%;
+    height: vw(201, 320);
+    flex-shrink: 0;
+
+    @include responsive(T) {
+      width: 50%;
+      height: vw(264, 768);
+      max-height: rem(302);
+    }
+
+    @include responsive(D) {
+      width: 50%;
+      height: vw(330, 1440);
+      // max-height: rem(330);
+    }
+
+    &.card01 {
+      @include bg("news01.jpg", center);
+      background-size: cover;
+    }
+
+    &.card02 {
+      @include bg("news02.jpg", center);
+      background-size: cover;
+    }
+
+    &.card03 {
+      @include bg("news03.jpg", center);
+      background-size: cover;
+    }
+
+    &.card04 {
+      @include bg("news04.jpg", center);
+      background-size: cover;
+    }
+  }
+
+  &__content {
+    width: vw(302, 320);
+
+    .sub-title {
+      @include h4;
+      color: $grey400;
+      font-weight: 400;
+    }
+
+    .title {
+      @include h4;
+      color: $grey700;
+      margin-top: rem(8);
+    }
+
+    .more {
+      @include b2;
+      display: inline-block;
+      text-decoration: underline;
+      text-underline-offset: rem(4);
+      color: $grey700;
+      font-weight: 600;
+      margin-top: rem(48);
+    }
+  }
+}
