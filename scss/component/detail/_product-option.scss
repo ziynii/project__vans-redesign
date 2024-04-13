@@ -66,6 +66,10 @@
       border-radius: rem(8);
       border: rem(1) solid $grey300;
 
+      @include responsive(T) {
+        width: rem(96);
+      }
+
       &.selected {
         border-color: $red;
       }

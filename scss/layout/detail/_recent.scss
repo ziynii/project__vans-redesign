@@ -2,6 +2,15 @@
   margin-top: rem(60);
   position: relative;
 
+  .section-title {
+    margin: 0;
+  }
+
+  @include responsive(T) {
+    margin: rem(120) auto 0 auto;
+    max-width: $tablet-max-width;
+  }
+
   button {
     &.swiper-button-disabled {
       opacity: 0.4;

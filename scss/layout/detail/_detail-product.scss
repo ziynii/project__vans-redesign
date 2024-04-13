@@ -1,6 +1,11 @@
 .product {
   padding-top: rem(80);
 
+  @include responsive(T) {
+    max-width: $tablet-max-width;
+    margin: 0 auto;
+  }
+
   &__btns {
     display: flex;
     gap: rem(16);
