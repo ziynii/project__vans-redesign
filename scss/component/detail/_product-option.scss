@@ -5,6 +5,16 @@
     flex-direction: column;
     gap: rem(60);
 
+    @include responsive(D) {
+      padding: 0 rem(32);
+      margin-top: 0;
+      flex-shrink: 0;
+      position: sticky;
+      top: 0;
+      height: 100%;
+      width: 40%;
+    }
+
     &-title {
       @include b1;
       color: $grey700;

@@ -6,6 +6,16 @@
     margin: 0 auto;
   }
 
+  @include responsive(D) {
+    max-width: $desktop-max-width;
+    display: flex;
+    padding-top: rem(120);
+
+    &__thumb-wrap {
+      width: 60%;
+    }
+  }
+
   &__btns {
     display: flex;
     gap: rem(16);
@@ -32,7 +42,7 @@
   &__notice {
     &-item {
       padding: rem(16) 0;
-      border-bottom: rem(1) solid $grey500;
+      border-bottom: rem(1) solid $grey300;
     }
 
     .title {
