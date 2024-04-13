@@ -5,6 +5,21 @@
     overflow-x: auto;
     margin: rem(80) auto 0;
     gap: rem(8);
+    padding-bottom: rem(48);
+
+    &::-webkit-scrollbar {
+      height: rem(6);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $black;
+      border-radius: rem(10);
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: $grey200;
+      border-radius: rem(10);
+    }
 
     @include responsive(T) {
       max-width: $tablet-max-width;
@@ -12,6 +27,7 @@
 
     @include responsive(D) {
       max-width: $desktop-max-width;
+      margin: rem(100) auto 0;
     }
   }
 }
