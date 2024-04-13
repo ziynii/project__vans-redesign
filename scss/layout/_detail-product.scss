@@ -1,0 +1,38 @@
+.product {
+  padding-top: rem(80);
+
+  &__btns {
+    display: flex;
+    gap: rem(16);
+
+    button {
+      @include h4;
+      width: 100%;
+      border-radius: rem(8);
+      padding: rem(24) rem(8);
+      border: rem(1) solid transparent;
+
+      &.cart {
+        background-color: $black;
+        color: $white;
+      }
+
+      &.purchase {
+        background-color: $white;
+        border-color: $black;
+      }
+    }
+  }
+
+  &__notice {
+    &-item {
+      padding: rem(16) 0;
+      border-bottom: rem(1) solid $grey500;
+    }
+
+    .title {
+      @include b1;
+      color: $grey700;
+    }
+  }
+}
