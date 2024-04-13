@@ -1,0 +1,18 @@
+.footer {
+  margin: rem(80) rem(8) 0 rem(8);
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include responsive(D) {
+    margin-top: rem(100);
+  }
+
+  &__logo {
+    @include bg("footer-logo.svg", center);
+    background-size: cover;
+    width: rem(120);
+    height: rem(48);
+  }
+}
