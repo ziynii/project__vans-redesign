@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Vans</title>
+  </head>
+  <body>
+    <!-- 탑 메뉴 -->
+    <div class="top-menu lg-only">
+      <ul class="top-menu__list align right">
+        <li class="top-menu__item">
+          <a href="#">매장 찾기</a>
+          <a href="#">고객센터</a>
+          <a href="#">장바구니</a>
+          <a href="#">로그인</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="header__content-wrap align both">
+        <button class="btn--menu lg-hidden">
+          <span class="visually-hidden">메뉴 열기</span>
+        </button>
+        <div class="header__logo">
+          <a href="#"><span class="visually-hidden">반스</span></a>
+        </div>
+
+        <ul class="align header__nav-list lg-only">
+          <li class="header__nav-item">
+            <a href="#">NEW</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">MEN</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">WOMEN</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">KIDS</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">CUSTOM</a>
+          </li>
+        </ul>
+
+        <div class="align lg-hidden">
+          <button class="btn--cart">
+            <span class="visually-hidden">장바구니</span>
+          </button>
+          <button class="btn--search">
+            <span class="visually-hidden">검색</span>
+          </button>
+        </div>
+
+        <div class="header__search lg-only">
+          <input type="text" class="search-input" placeholder="search..." />
+          <button class="btn--search"></button>
+        </div>
+      </div>
+    </header>
+
+    <main class="m8">
+      <div class="product">
+        <div class="product__thumb"></div>
+        <div class="product__info">
+          <div class="product__info__title"></div>
+          <div class="product__info__style"></div>
+          <div class="product__info__price"></div>
+        </div>
+
+        <div class="product__detail">
+          <ul class="product__detail__tab-list">
+            <li class="product__detail__tab-menu">상품설명</li>
+            <li class="product__detail__tab-menu">상품정보</li>
+            <li class="product__detail__tab-menu">리뷰</li>
+          </ul>
+
+          <div class="product__detail__tab-contents">
+            <div class="product__detail__tab-content">
+              90년대를 그대로 담은 매끈한 슈즈 <br />반스의 90년대 헤리티지
+              스타일을 담은 스포츠 로우 스웨이드 슈즈로, 오리지널 스케이트 반스
+              스포츠를 재해석했습니다. 개방형 로우 칼라, 확장형 설포, “V” 사이드
+              스트라이프를 담아낸 벌커나이즈드 로우탑 슈즈로, 스케이트 슈즈
+              디자인과 독특한 레트로 요소를 절묘하게 녹여 냈습니다.
+            </div>
+            <div class="product__detail__tab-content"></div>
+            <div class="product__detail__tab-content"></div>
+          </div>
+
+          <div class="product__color">
+            <div class="product__option-title">색상</div>
+            <div class="product__color-item"></div>
+            <div class="product__color-item"></div>
+          </div>
+
+          <div class="product__size">
+            <div class="align both">
+              <div class="product__option-title"></div>
+              <div class="product__size-guide">사이즈 가이드</div>
+            </div>
+
+            <div class="product__size-picker">
+              <div class="size-item">
+                <label for="SHOE_SIZE1" class="size-item">215</label>
+                <input type="radio" class="size-item__input" id="SHOE_SIZE1" />
+              </div>
+              <div class="size-item">
+                <label for="SHOE_SIZE2" class="size-item">220</label>
+                <input type="radio" class="size-item__input" id="SHOE_SIZE2" />
+              </div>
+              <div class="size-item">
+                <label for="SHOE_SIZE3" class="size-item">225</label>
+                <input type="radio" class="size-item__input" id="SHOE_SIZE3" />
+              </div>
+              <div class="size-item">
+                <label for="SHOE_SIZE4" class="size-item">230</label>
+                <input type="radio" class="size-item__input" id="SHOE_SIZE4" />
+              </div>
+              <div class="size-item">
+                <label for="SHOE_SIZE5" class="size-item">235</label>
+                <input type="radio" class="size-item__input" id="SHOE_SIZE5" />
+              </div>
+              <div class="size-item">
+                <label for="SHOE_SIZE6" class="size-item">240</label>
+                <input type="radio" class="size-item__input" id="SHOE_SIZE6" />
+              </div>
+              <div class="size-item">
+                <label for="SHOE_SIZE7" class="size-item">245</label>
+                <input type="radio" class="size-item__input" id="SHOE_SIZE7" />
+              </div>
+              <div class="size-item">
+                <label for="SHOE_SIZE8" class="size-item">250</label>
+                <input type="radio" class="size-item__input" id="SHOE_SIZE8" />
+              </div>
+              <div class="size-item">
+                <label for="SHOE_SIZE9" class="size-item">255</label>
+                <input type="radio" class="size-item__input" id="SHOE_SIZE9" />
+              </div>
+              <div class="size-item">
+                <label for="SHOE_SIZE10" class="size-item">260</label>
+                <input type="radio" class="size-item__input" id="SHOE_SIZE10" />
+              </div>
+              <div class="size-item">
+                <label for="SHOE_SIZE11" class="size-item">265</label>
+                <input type="radio" class="size-item__input" id="SHOE_SIZE11" />
+              </div>
+              <div class="size-item">
+                <label for="SHOE_SIZE12" class="size-item">270</label>
+                <input type="radio" class="size-item__input" id="SHOE_SIZE12" />
+              </div>
+              <div class="size-item">
+                <label for="SHOE_SIZE13" class="size-item">275</label>
+                <input type="radio" class="size-item__input" id="SHOE_SIZE13" />
+              </div>
+              <div class="size-item">
+                <label for="SHOE_SIZE14" class="size-item">280</label>
+                <input type="radio" class="size-item__input" id="SHOE_SIZE14" />
+              </div>
+              <div class="size-item">
+                <label for="SHOE_SIZE15" class="size-item">285</label>
+                <input type="radio" class="size-item__input" id="SHOE_SIZE15" />
+              </div>
+            </div>
+
+            <div class="product__btns">
+              <button class="btn--black">장바구니</button>
+              <button class="btn--outline">바로구매</button>
+            </div>
+
+            <div class="product__notice">
+              <div class="product__notice-item">
+                <div class="align both">
+                  <div class="title">세탁방법 / 취급시 주의사항</div>
+                  <button class="btn--bottom"></button>
+                </div>
+                <div class="content"></div>
+              </div>
+              <div class="product__notice-item">
+                <div class="align both">
+                  <div class="title">배송 / 반품 / 교환 안내</div>
+                  <button class="btn--bottom"></button>
+                </div>
+                <div class="content"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 하단 메뉴 -->
+    <div class="bottom-menu">
+      <div class="bottom-menu__list">
+        <div class="bottom-menu__item">
+          <div class="align both">
+            <p class="title">ABOUT</p>
+            <button class="btn--bottom"></button>
+          </div>
+
+          <ul class="nest-menu__list">
+            <li class="nest-menu__item"><a href="#">반스에 대하여</a></li>
+            <li class="nest-menu__item"><a href="#">고객센터</a></li>
+          </ul>
+        </div>
+        <div class="bottom-menu__item">
+          <div class="align both">
+            <p class="title">SHOPPING</p>
+            <button class="btn--bottom"></button>
+          </div>
+
+          <ul class="nest-menu__list">
+            <li class="nest-menu__item"><a href="#">회원가입</a></li>
+            <li class="nest-menu__item"><a href="#">주문/배송 조회</a></li>
+          </ul>
+        </div>
+        <div class="bottom-menu__item">
+          <div class="align both">
+            <p class="title">LEGAL</p>
+            <button class="btn--bottom"></button>
+          </div>
+
+          <ul class="nest-menu__list">
+            <li class="nest-menu__item"><a href="#">이용약관</a></li>
+            <li class="nest-menu__item"><a href="#">개인정보처리방침</a></li>
+            <li class="nest-menu__item"><a href="#">청소년 보호정책</a></li>
+          </ul>
+        </div>
+        <div class="bottom-menu__item">
+          <div class="align both">
+            <p class="title">CATEGORY</p>
+            <button class="btn--bottom"></button>
+          </div>
+
+          <ul class="nest-menu__list">
+            <li class="nest-menu__item"><a href="#">NEW</a></li>
+            <li class="nest-menu__item"><a href="#">MEN</a></li>
+            <li class="nest-menu__item"><a href="#">WOMEN</a></li>
+            <li class="nest-menu__item"><a href="#">KIDS</a></li>
+            <li class="nest-menu__item"><a href="#">CUSTOM</a></li>
+            <li class="nest-menu__item"><a href="#">PREMIUM</a></li>
+            <li class="nest-menu__item"><a href="#">SALE</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bottom-menu__cm">
+        <div class="news-letter">
+          <div class="title">VANS NEWS LETTER</div>
+
+          <div class="news-letter__input">
+            <input type="text" placeholder="이메일 주소" />
+            <button class="btn--right"></button>
+          </div>
+        </div>
+        <div class="follow">
+          <div class="title">FOLLOW VANS</div>
+
+          <div class="follow__icons">
+            <div class="icon facebook">
+              <span class="visually-hidden">페이스북 바로가기</span>
+            </div>
+            <div class="icon naver">
+              <span class="visually-hidden">스마트 스토어 바로가기</span>
+            </div>
+            <div class="icon kakao">
+              <span class="visually-hidden">카카오 플러스친구 추가하기</span>
+            </div>
+            <div class="icon insta">
+              <span class="visually-hidden">인스타그램 바로가기</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 푸터 -->
+
+    <footer class="footer">
+      <div class="footer__logo"></div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="js/product-slide.js"></script>
+    <script src="js/bottom-menu.js"></script>
+    <script src="js/news-slide.js"></script>
+    <script src="js/header.js"></script>
+  </body>
+</html>
