@@ -1,0 +1,11 @@
+.suggest {
+  margin-top: rem(120);
+  position: relative;
+
+  button {
+    &.swiper-button-disabled {
+      opacity: 0.4;
+      cursor: default;
+    }
+  }
+}

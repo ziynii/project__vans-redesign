@@ -1,0 +1,11 @@
+.recent {
+  margin-top: rem(60);
+  position: relative;
+
+  button {
+    &.swiper-button-disabled {
+      opacity: 0.4;
+      cursor: default;
+    }
+  }
+}
