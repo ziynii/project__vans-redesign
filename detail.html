@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Vans</title>
   </head>
   <body>
@@ -65,127 +69,233 @@
 
     <main class="m8">
       <div class="product">
-        <div class="product__thumb"></div>
-        <div class="product__info">
-          <div class="product__info__title"></div>
-          <div class="product__info__style"></div>
-          <div class="product__info__price"></div>
-        </div>
-
-        <div class="product__detail">
-          <ul class="product__detail__tab-list">
-            <li class="product__detail__tab-menu">상품설명</li>
-            <li class="product__detail__tab-menu">상품정보</li>
-            <li class="product__detail__tab-menu">리뷰</li>
-          </ul>
-
-          <div class="product__detail__tab-contents">
-            <div class="product__detail__tab-content">
-              90년대를 그대로 담은 매끈한 슈즈 <br />반스의 90년대 헤리티지
-              스타일을 담은 스포츠 로우 스웨이드 슈즈로, 오리지널 스케이트 반스
-              스포츠를 재해석했습니다. 개방형 로우 칼라, 확장형 설포, “V” 사이드
-              스트라이프를 담아낸 벌커나이즈드 로우탑 슈즈로, 스케이트 슈즈
-              디자인과 독특한 레트로 요소를 절묘하게 녹여 냈습니다.
+        <!-- 썸네일 및 상품 정보 -->
+        <div>
+          <div class="product__thumb">
+            <div class="swiper thumb__main-slide">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="images/detail-thumb01.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/detail-thumb02.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/detail-thumb03.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/detail-thumb04.jpg" />
+                </div>
+              </div>
             </div>
-            <div class="product__detail__tab-content"></div>
-            <div class="product__detail__tab-content"></div>
+
+            <div class="swiper thumb__list-slide">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="images/detail-thumb01.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/detail-thumb02.jpg" />
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="images/detail-thumb03.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/detail-thumb04.jpg" />
+                </div>
+              </div>
+            </div>
           </div>
 
+          <div class="product__info">
+            <div class="product__info__title">
+              트라이 톤 Sport Low 스포츠 로우
+            </div>
+            <div class="product__info__style">스타일 : VN000CQRGRN1</div>
+            <div class="product__info__price">85,000 원</div>
+          </div>
+
+          <div class="product__detail">
+            <ul class="product__detail__tab-list">
+              <li class="product__detail__tab-menu active">상품설명</li>
+              <li class="product__detail__tab-menu">상품정보</li>
+              <li class="product__detail__tab-menu">리뷰</li>
+            </ul>
+
+            <div class="product__detail__tab-contents">
+              <div class="product__detail__tab-content">
+                90년대를 그대로 담은 매끈한 슈즈 <br />반스의 90년대 헤리티지
+                스타일을 담은 스포츠 로우 스웨이드 슈즈로, 오리지널 스케이트
+                반스 스포츠를 재해석했습니다. 개방형 로우 칼라, 확장형 설포, “V”
+                사이드 스트라이프를 담아낸 벌커나이즈드 로우탑 슈즈로, 스케이트
+                슈즈 디자인과 독특한 레트로 요소를 절묘하게 녹여 냈습니다.
+              </div>
+              <div class="product__detail__tab-content"></div>
+              <div class="product__detail__tab-content"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 상품 옵션 -->
+        <div class="product__option">
           <div class="product__color">
             <div class="product__option-title">색상</div>
-            <div class="product__color-item"></div>
-            <div class="product__color-item"></div>
+            <div class="product__color-wrap">
+              <div class="product__color-item green selected"></div>
+              <div class="product__color-item purple"></div>
+            </div>
           </div>
 
           <div class="product__size">
             <div class="align both">
-              <div class="product__option-title"></div>
+              <div class="product__option-title">사이즈</div>
               <div class="product__size-guide">사이즈 가이드</div>
             </div>
 
             <div class="product__size-picker">
-              <div class="size-item">
-                <label for="SHOE_SIZE1" class="size-item">215</label>
-                <input type="radio" class="size-item__input" id="SHOE_SIZE1" />
+              <div>
+                <label for="SHOE_SIZE1" class="size-item disabled">215</label>
+                <input
+                  type="radio"
+                  class="size-item__input visually-hidden"
+                  id="SHOE_SIZE1"
+                />
               </div>
-              <div class="size-item">
+              <div>
                 <label for="SHOE_SIZE2" class="size-item">220</label>
-                <input type="radio" class="size-item__input" id="SHOE_SIZE2" />
+                <input
+                  type="radio"
+                  class="size-item__input visually-hidden"
+                  id="SHOE_SIZE2"
+                />
               </div>
-              <div class="size-item">
-                <label for="SHOE_SIZE3" class="size-item">225</label>
-                <input type="radio" class="size-item__input" id="SHOE_SIZE3" />
+              <div>
+                <label for="SHOE_SIZE3" class="size-item selected">225</label>
+                <input
+                  type="radio"
+                  class="size-item__input visually-hidden"
+                  id="SHOE_SIZE3"
+                />
               </div>
-              <div class="size-item">
+              <div>
                 <label for="SHOE_SIZE4" class="size-item">230</label>
-                <input type="radio" class="size-item__input" id="SHOE_SIZE4" />
+                <input
+                  type="radio"
+                  class="size-item__input visually-hidden"
+                  id="SHOE_SIZE4"
+                />
               </div>
-              <div class="size-item">
+              <div>
                 <label for="SHOE_SIZE5" class="size-item">235</label>
-                <input type="radio" class="size-item__input" id="SHOE_SIZE5" />
+                <input
+                  type="radio"
+                  class="size-item__input visually-hidden"
+                  id="SHOE_SIZE5"
+                />
               </div>
-              <div class="size-item">
-                <label for="SHOE_SIZE6" class="size-item">240</label>
-                <input type="radio" class="size-item__input" id="SHOE_SIZE6" />
+              <div>
+                <label for="SHOE_SIZE6" class="size-item disabled">240</label>
+                <input
+                  type="radio"
+                  class="size-item__input visually-hidden"
+                  id="SHOE_SIZE6"
+                />
               </div>
-              <div class="size-item">
+              <div>
                 <label for="SHOE_SIZE7" class="size-item">245</label>
-                <input type="radio" class="size-item__input" id="SHOE_SIZE7" />
+                <input
+                  type="radio"
+                  class="size-item__input visually-hidden"
+                  id="SHOE_SIZE7"
+                />
               </div>
-              <div class="size-item">
+              <div>
                 <label for="SHOE_SIZE8" class="size-item">250</label>
-                <input type="radio" class="size-item__input" id="SHOE_SIZE8" />
+                <input
+                  type="radio"
+                  class="size-item__input visually-hidden"
+                  id="SHOE_SIZE8"
+                />
               </div>
-              <div class="size-item">
+              <div>
                 <label for="SHOE_SIZE9" class="size-item">255</label>
-                <input type="radio" class="size-item__input" id="SHOE_SIZE9" />
+                <input
+                  type="radio"
+                  class="size-item__input visually-hidden"
+                  id="SHOE_SIZE9"
+                />
               </div>
-              <div class="size-item">
+              <div>
                 <label for="SHOE_SIZE10" class="size-item">260</label>
-                <input type="radio" class="size-item__input" id="SHOE_SIZE10" />
+                <input
+                  type="radio"
+                  class="size-item__input visually-hidden"
+                  id="SHOE_SIZE10"
+                />
               </div>
-              <div class="size-item">
+              <div>
                 <label for="SHOE_SIZE11" class="size-item">265</label>
-                <input type="radio" class="size-item__input" id="SHOE_SIZE11" />
+                <input
+                  type="radio"
+                  class="size-item__input visually-hidden"
+                  id="SHOE_SIZE11"
+                />
               </div>
-              <div class="size-item">
+              <div>
                 <label for="SHOE_SIZE12" class="size-item">270</label>
-                <input type="radio" class="size-item__input" id="SHOE_SIZE12" />
+                <input
+                  type="radio"
+                  class="size-item__input visually-hidden"
+                  id="SHOE_SIZE12"
+                />
               </div>
-              <div class="size-item">
+              <div>
                 <label for="SHOE_SIZE13" class="size-item">275</label>
-                <input type="radio" class="size-item__input" id="SHOE_SIZE13" />
+                <input
+                  type="radio"
+                  class="size-item__input visually-hidden"
+                  id="SHOE_SIZE13"
+                />
               </div>
-              <div class="size-item">
-                <label for="SHOE_SIZE14" class="size-item">280</label>
-                <input type="radio" class="size-item__input" id="SHOE_SIZE14" />
+              <div>
+                <label for="SHOE_SIZE14" class="size-item disabled">280</label>
+                <input
+                  type="radio"
+                  class="size-item__input visually-hidden"
+                  id="SHOE_SIZE14"
+                />
               </div>
-              <div class="size-item">
-                <label for="SHOE_SIZE15" class="size-item">285</label>
-                <input type="radio" class="size-item__input" id="SHOE_SIZE15" />
+              <div>
+                <label for="SHOE_SIZE15" class="size-item disabled">285</label>
+                <input
+                  type="radio"
+                  class="size-item__input visually-hidden"
+                  id="SHOE_SIZE15"
+                />
               </div>
             </div>
+          </div>
 
-            <div class="product__btns">
-              <button class="btn--black">장바구니</button>
-              <button class="btn--outline">바로구매</button>
+          <div class="product__btns">
+            <button class="cart">장바구니</button>
+            <button class="purchase">바로구매</button>
+          </div>
+
+          <div class="product__notice">
+            <div class="product__notice-item">
+              <div class="align both">
+                <div class="title">세탁방법 / 취급시 주의사항</div>
+                <button class="btn--bottom"></button>
+              </div>
+              <div class="content"></div>
             </div>
-
-            <div class="product__notice">
-              <div class="product__notice-item">
-                <div class="align both">
-                  <div class="title">세탁방법 / 취급시 주의사항</div>
-                  <button class="btn--bottom"></button>
-                </div>
-                <div class="content"></div>
+            <div class="product__notice-item">
+              <div class="align both">
+                <div class="title">배송 / 반품 / 교환 안내</div>
+                <button class="btn--bottom"></button>
               </div>
-              <div class="product__notice-item">
-                <div class="align both">
-                  <div class="title">배송 / 반품 / 교환 안내</div>
-                  <button class="btn--bottom"></button>
-                </div>
-                <div class="content"></div>
-              </div>
+              <div class="content"></div>
             </div>
           </div>
         </div>
@@ -284,10 +394,9 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="js/product-slide.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/bottom-menu.js"></script>
-    <script src="js/news-slide.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/detail-product-slide.js"></script>
   </body>
 </html>
