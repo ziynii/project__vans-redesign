@@ -12,6 +12,7 @@
     flex-direction: row;
     max-width: $desktop-max-width;
     gap: rem(24);
+    margin-top: rem(100);
   }
 
   &__list {

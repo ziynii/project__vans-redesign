@@ -1,3 +1,7 @@
 .new-arrival {
   margin: rem(80) rem(8) 0 rem(8);
+
+  @include responsive(D) {
+    margin-top: rem(100);
+  }
 }

@@ -4,6 +4,10 @@
   margin-top: rem(80);
   height: 360px;
 
+  @include responsive(D) {
+    margin-top: rem(100);
+  }
+
   &__content {
     font-family: "Cafe24Ohsquare";
     width: 100%;
