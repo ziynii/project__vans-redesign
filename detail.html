@@ -118,21 +118,55 @@
 
           <div class="product__detail">
             <ul class="product__detail__tab-list">
-              <li class="product__detail__tab-menu active">상품설명</li>
-              <li class="product__detail__tab-menu">상품정보</li>
-              <li class="product__detail__tab-menu">리뷰</li>
+              <li
+                class="product__detail__tab-menu is-active"
+                data-tab="description"
+              >
+                상품설명
+              </li>
+              <li class="product__detail__tab-menu" data-tab="info">
+                상품정보
+              </li>
+              <li class="product__detail__tab-menu" data-tab="review">리뷰</li>
             </ul>
 
             <div class="product__detail__tab-contents">
-              <div class="product__detail__tab-content">
-                90년대를 그대로 담은 매끈한 슈즈 <br />반스의 90년대 헤리티지
-                스타일을 담은 스포츠 로우 스웨이드 슈즈로, 오리지널 스케이트
-                반스 스포츠를 재해석했습니다. 개방형 로우 칼라, 확장형 설포, “V”
-                사이드 스트라이프를 담아낸 벌커나이즈드 로우탑 슈즈로, 스케이트
-                슈즈 디자인과 독특한 레트로 요소를 절묘하게 녹여 냈습니다.
+              <div
+                class="product__detail__tab-content description is-select"
+                id="description"
+              >
+                90년대를 그대로 담은 매끈한 슈즈 <br /><br />반스의 90년대
+                헤리티지 스타일을 담은 스포츠 로우 스웨이드 슈즈로, 오리지널
+                스케이트 반스 스포츠를 재해석했습니다. 개방형 로우 칼라, 확장형
+                설포, “V” 사이드 스트라이프를 담아낸 벌커나이즈드 로우탑 슈즈로,
+                스케이트 슈즈 디자인과 독특한 레트로 요소를 절묘하게 녹여
+                냈습니다.
               </div>
-              <div class="product__detail__tab-content"></div>
-              <div class="product__detail__tab-content"></div>
+              <div class="product__detail__tab-content info" id="info">
+                <dl>
+                  <dt class="info-key">소재</dt>
+                  <dd class="info-value">면100%, 천연가죽(소)</dd>
+                  <dt class="info-key">색상</dt>
+                  <dd class="info-value">TRI-TONE GREEN</dd>
+                  <dt class="info-key">치수</dt>
+                  <dd class="info-value">상단표기</dd>
+                  <dt class="info-key">제조자/수입자</dt>
+                  <dd class="info-value">(유)브이에프코리아</dd>
+                  <dt class="info-key">제조국</dt>
+                  <dd class="info-value">베트남</dd>
+                  <dt class="info-key">제조연월</dt>
+                  <dd class="info-value">상품라벨에서 확인</dd>
+                  <dt class="info-key">A/S 책임자와 전화번호</dt>
+                  <dd class="info-value">
+                    (유)브이에프코리아 / 온라인 스토어 고객센터 1522-1882
+                  </dd>
+                  <dt class="info-key">Model</dt>
+                  <dd class="info-value">VN000CQRGRN1</dd>
+                </dl>
+              </div>
+              <div class="product__detail__tab-content review" id="review">
+                등록된 리뷰가 없습니다.
+              </div>
             </div>
           </div>
 
@@ -432,7 +466,7 @@
           <div class="product__color">
             <div class="product__option-title">색상</div>
             <div class="product__color-wrap">
-              <div class="product__color-item green selected"></div>
+              <div class="product__color-item green is-select"></div>
               <div class="product__color-item purple"></div>
             </div>
           </div>
@@ -954,5 +988,6 @@
     <script src="js/bottom-menu.js"></script>
     <script src="js/header.js"></script>
     <script src="js/detail-product-slide.js"></script>
+    <script src="js/detail-product-tab.js"></script>
   </body>
 </html>

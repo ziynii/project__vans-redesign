@@ -34,8 +34,9 @@
       height: rem(120);
       border-radius: rem(8);
       border: rem(1) solid transparent;
+      cursor: pointer;
 
-      &.selected {
+      &.is-select {
         border-color: $red;
       }
 
@@ -75,6 +76,7 @@
       align-items: center;
       border-radius: rem(8);
       border: rem(1) solid $grey300;
+      cursor: pointer;
 
       @include responsive(T) {
         width: rem(96);
@@ -88,6 +90,7 @@
         background-color: $grey50;
         border-color: $grey200;
         color: $grey300;
+        cursor: not-allowed;
       }
     }
   }
