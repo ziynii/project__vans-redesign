@@ -10,6 +10,7 @@
     max-width: $desktop-max-width;
     display: flex;
     padding-top: rem(120);
+    padding-bottom: rem(200);
 
     &__thumb-wrap {
       width: 60%;
@@ -48,6 +49,28 @@
     .title {
       @include b1;
       color: $grey700;
+    }
+
+    .content {
+      padding: rem(24) rem(4);
+      display: none;
+
+      &.is-active {
+        display: block;
+      }
+    }
+
+    .notice-key {
+      @include b3;
+      padding-bottom: rem(16);
+      color: $grey700;
+    }
+
+    .notice-value {
+      @include b4;
+      padding-bottom: rem(24);
+      color: $grey500;
+      line-height: rem(18);
     }
   }
 }
