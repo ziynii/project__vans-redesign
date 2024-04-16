@@ -85,4 +85,11 @@
       height: rem(42);
     }
   }
+
+  &--close {
+    @include bg("ico_close.svg");
+    width: rem(32);
+    height: rem(32);
+    background-size: cover;
+  }
 }
