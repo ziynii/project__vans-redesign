@@ -1,0 +1,179 @@
+.main-banner {
+  height: rem(530);
+  background-color: $grey50;
+  padding-top: rem(60);
+  overflow: hidden;
+
+  @include responsive(D) {
+    padding-top: rem(100);
+    height: rem(570);
+  }
+
+  &__content {
+    position: relative;
+    height: 100%;
+
+    @include responsive(T) {
+      max-width: $tablet-max-width;
+      margin: 0 auto;
+    }
+
+    @include responsive(D) {
+      max-width: $desktop-max-width;
+      margin: 0 auto;
+    }
+  }
+
+  &__text {
+    color: $grey700;
+    padding-top: rem(56);
+    margin-left: rem(24);
+    font-family: "Cafe24Ohsquare";
+
+    .series {
+      @include b4;
+      padding-top: rem(12);
+      border-top: rem(1) solid $grey700;
+
+      @include responsive(T) {
+        @include b2;
+        padding-top: rem(32);
+      }
+
+      @include responsive(D) {
+        @include b1;
+        padding-top: rem(24);
+      }
+    }
+
+    .title {
+      @include h4;
+      margin-top: rem(24);
+
+      @include responsive(T) {
+        @include h2;
+        margin-top: rem(48);
+      }
+
+      @include responsive(D) {
+        @include h1;
+      }
+    }
+
+    .color {
+      @include b4;
+      margin-top: rem(24);
+
+      @include responsive(T) {
+        margin-top: rem(48);
+      }
+
+      @include responsive(D) {
+        margin-top: rem(60);
+      }
+    }
+  }
+
+  &__line {
+    @include position(right, 0, top, rem(56));
+    width: rem(60);
+    height: rem(1);
+    background-color: $grey700;
+  }
+
+  &__image {
+    width: vw(380);
+    height: vw(380);
+    max-width: rem(560);
+    max-height: rem(560);
+    position: absolute;
+    bottom: rem(-24);
+    right: rem(12);
+
+    @include responsive(D) {
+      transform: none;
+      bottom: rem(-80);
+      right: 10%;
+      left: auto;
+    }
+
+    &-content {
+      display: none;
+      width: 100%;
+      height: 100%;
+      transform: rotate(-30deg);
+
+      @include responsive(D) {
+        transform: rotate(0);
+      }
+
+      &.is-active {
+        display: block;
+        animation: showImageForMobile 0.3s linear;
+
+        @include responsive(D) {
+          animation: showImageForDesktop 0.3s linear;
+        }
+      }
+    }
+  }
+
+  &__color {
+    display: flex;
+    flex-direction: column;
+    gap: rem(8);
+    position: absolute;
+    bottom: rem(24);
+    right: rem(24);
+
+    &-item {
+      width: rem(16);
+      height: rem(16);
+      border-radius: rem(16);
+      cursor: pointer;
+
+      &.is-active {
+        outline: rem(1) solid $red;
+        outline-offset: rem(2);
+      }
+
+      &.mint {
+        background-color: #a8baba;
+      }
+
+      &.brown {
+        background-color: #574539;
+      }
+
+      &.purple {
+        background-color: #4d1721;
+      }
+
+      &.indigo {
+        background-color: #3a3847;
+      }
+    }
+  }
+}
+
+@keyframes showImageForDesktop {
+  from {
+    opacity: 0.3;
+    transform: translateX(rem(-20));
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes showImageForMobile {
+  from {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
