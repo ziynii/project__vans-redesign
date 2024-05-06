@@ -27,15 +27,24 @@
       border-radius: rem(8);
       padding: rem(24) rem(8);
       border: rem(1) solid transparent;
+      transition: 0.2s;
 
       &.cart {
         background-color: $black;
         color: $white;
+
+        &:hover {
+          background-color: $grey700;
+        }
       }
 
       &.purchase {
         background-color: $white;
         border-color: $black;
+
+        &:hover {
+          background-color: $grey50;
+        }
       }
     }
   }

@@ -17,8 +17,14 @@
 
   button {
     &.swiper-button-disabled {
-      opacity: 0.4;
+      opacity: 0.2;
       cursor: default;
+    }
+
+    &:not(.swiper-button-disabled) {
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 }

@@ -40,6 +40,10 @@
         border-color: $red;
       }
 
+      &:hover {
+        border-color: $red;
+      }
+
       &.green {
         @include bg("detail-thumb01.jpg", center);
         background-size: cover;
@@ -91,6 +95,12 @@
         border-color: $grey200;
         color: $grey300;
         cursor: not-allowed;
+      }
+
+      &:not(.disabled) {
+        &:hover {
+          border-color: $red;
+        }
       }
     }
   }
