@@ -1,7 +1,6 @@
 const newProductsSlide = tns({
   container: ".new-arrival__slide",
   items: 1,
-  gutter: 8,
   edgePadding: 0,
   nav: false,
   controlsContainer: "#new-arrival__slide-controls",
@@ -22,7 +21,6 @@ const newProductsSlide = tns({
 const bestProductsSlide = tns({
   container: ".best-seller__slide",
   items: 1,
-  gutter: 8,
   edgePadding: 0,
   nav: false,
   controlsContainer: "#best-seller__slide-controls",
