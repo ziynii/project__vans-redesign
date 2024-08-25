@@ -1,6 +1,7 @@
 .popup {
     @include position(left, 20%, top, 30%);
     display: none;
+    border: rem(1) solid $black;
 
     &__button__wrap {
         background-color:$black;
