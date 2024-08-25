@@ -29,23 +29,25 @@
           <span class="visually-hidden">반스</span>
         </a>
 
-        <ul class="align header__nav-list lg-only">
-          <li class="header__nav-item">
-            <a href="#"><span class="visually-hidden">신상품</span>NEW</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#"><span class="visually-hidden">남성</span>MEN</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#"><span class="visually-hidden">여성</span>WOMEN</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#"><span class="visually-hidden">키즈</span>KIDS</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#"><span class="visually-hidden">커스텀</span>CUSTOM</a>
-          </li>
-        </ul>
+        <nav class="header__nav lg-only" aria-label="카테고리">
+          <ul class="align header__nav-list">
+            <li class="header__nav-item">
+              <a href="#"><span class="visually-hidden">신상품</span>NEW</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#"><span class="visually-hidden">남성</span>MEN</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#"><span class="visually-hidden">여성</span>WOMEN</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#"><span class="visually-hidden">키즈</span>KIDS</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#"><span class="visually-hidden">커스텀</span>CUSTOM</a>
+            </li>
+          </ul>
+        </nav>
 
         <div class="align lg-hidden">
           <button class="btn--cart">
@@ -56,17 +58,17 @@
           </button>
         </div>
 
-        <div class="header__search lg-only">
+        <form class="header__search lg-only" role="search">
           <input type="text" class="search-input" placeholder="search..." />
           <button class="btn--search">
             <span class="visually-hidden">검색</span>
           </button>
-        </div>
+        </form>
       </div>
     </header>
 
     <!-- 메인 배너 -->
-    <div class="main-banner">
+    <section class="main-banner">
       <div class="main-banner__content">
         <div class="main-banner__text">
           <span class="series">VANS PREMIUM</span>
@@ -121,7 +123,7 @@
 
         <div class="main-banner__line lg-only"></div>
       </div>
-    </div>
+    </section>
 
     <!-- 신상품 -->
     <section class="new-arrival">
@@ -606,12 +608,12 @@
 
     <!-- 프로모션 -->
     <section class="promotion">
-      <h4 class="visually-hidden">promotion</h4>
+      <h5 class="visually-hidden">promotion</h5>
 
       <ul class="promotion__list">
         <li class="promotion__item">
           <div>
-            <div class="promotion__item-thumb card01"></div>
+            <figure class="promotion__item-thumb card01"></figure>
             <div>
               <div class="promotion__item-title">AVE 2.0</div>
               <div class="promotion__item-description">
@@ -624,7 +626,7 @@
 
         <li class="promotion__item">
           <div>
-            <div class="promotion__item-thumb card02"></div>
+            <figure class="promotion__item-thumb card02"></figure>
             <div>
               <div class="promotion__item-title">Ultrarange Neo VR3</div>
               <div class="promotion__item-description">
@@ -637,7 +639,7 @@
 
         <li class="promotion__item">
           <div>
-            <div class="promotion__item-thumb card03"></div>
+            <figure class="promotion__item-thumb card03"></figure>
             <div>
               <div class="promotion__item-title">Rowley XLT</div>
               <div class="promotion__item-description">
@@ -657,55 +659,55 @@
       <div class="news__slide-wrap">
         <ul class="news__slide">
           <li class="news__slide-item">
-            <div class="news__slide-item__thumb card01"></div>
+            <figure class="news__slide-item__thumb card01"></figure>
 
-            <div class="news__slide-item__content">
-              <div class="sub-title">SKATE</div>
-              <div class="title">
+            <article class="news__slide-item__content">
+              <p class="sub-title">SKATE</p>
+              <h5 class="title">
                 반스, 스케이터 앤서니 반 엔겔런의 실루엣 AVE 2.0 전세계 동시
                 출시
-              </div>
+              </h5>
 
               <a href="#" class="more">READ MORE</a>
-            </div>
+            </article>
           </li>
           <li class="news__slide-item">
-            <div class="news__slide-item__thumb card02"></div>
+            <figure class="news__slide-item__thumb card02"></figure>
 
-            <div class="news__slide-item__content">
-              <div class="sub-title">CLASSICS</div>
-              <div class="title">
+            <article class="news__slide-item__content">
+              <p class="sub-title">CLASSICS</p>
+              <h5 class="title">
                 반스, 전 BEAMS 디렉터가 참여한 ‘도쿄 디자인 컬렉티브’ 라인의
                 새로운 컬렉션 출시
-              </div>
+              </h5>
 
               <a href="#" class="more">READ MORE</a>
-            </div>
+            </article>
           </li>
           <li class="news__slide-item">
-            <div class="news__slide-item__thumb card03"></div>
+            <figure class="news__slide-item__thumb card03"></figure>
 
-            <div class="news__slide-item__content">
-              <div class="sub-title">OTW BY VANS</div>
-              <div class="title">
+            <article class="news__slide-item__content">
+              <p class="sub-title">OTW BY VANS</p>
+              <h5 class="title">
                 반스, 디자인과 품질을 향상한 ‘반스 프리미엄’ 론칭
-              </div>
+              </h5>
 
               <a href="#" class="more">READ MORE</a>
-            </div>
+            </article>
           </li>
           <li class="news__slide-item">
-            <div class="news__slide-item__thumb card04"></div>
+            <figure class="news__slide-item__thumb card04"></figure>
 
-            <div class="news__slide-item__content">
-              <div class="sub-title">OTW BY VANS</div>
-              <div class="title">
+            <article class="news__slide-item__content">
+              <p class="sub-title">OTW BY VANS</p>
+              <h5 class="title">
                 반스 프리미엄 클래식, 온종일 발을 편안하게 해주는 향상된 풋웨어
                 라인 선보여
-              </div>
+              </h5>
 
               <a href="#" class="more">READ MORE</a>
-            </div>
+            </article>
           </li>
         </ul>
 
@@ -721,7 +723,7 @@
     </section>
 
     <!-- 하단 메뉴 -->
-    <div class="bottom-menu">
+    <aside class="bottom-menu">
       <div class="bottom-menu__list">
         <div class="bottom-menu__item">
           <div class="align both">
@@ -784,15 +786,15 @@
       </div>
 
       <div class="bottom-menu__cm">
-        <div class="news-letter">
+        <section class="news-letter">
           <div class="title">VANS NEWS LETTER</div>
 
           <div class="news-letter__input">
             <input type="text" placeholder="이메일 주소" />
             <button class="btn--right"></button>
           </div>
-        </div>
-        <div class="follow">
+        </section>
+        <section class="follow">
           <div class="title">FOLLOW VANS</div>
 
           <div class="follow__icons">
@@ -809,9 +811,9 @@
               <span class="visually-hidden">인스타그램 바로가기</span>
             </div>
           </div>
-        </div>
+        </section>
       </div>
-    </div>
+    </aside>
 
     <!-- 푸터 -->
 
@@ -824,23 +826,33 @@
     <aside class="side-nav lg-hidden">
       <div class="side-nav__wrap">
         <button class="btn--close"></button>
-        <div class="side-nav__content">
+        <nav class="side-nav__content">
           <ul class="category__list">
-            <li class="category__item">NEW</li>
-            <li class="category__item">MEN</li>
-            <li class="category__item">WOMEN</li>
-            <li class="category__item">KIDS</li>
-            <li class="category__item">CUSTOM</li>
+            <li class="category__item"><a href="#"> NEW </a></li>
+            <li class="category__item"><a href="#"> MEN </a></li>
+            <li class="category__item"><a href="#"> WOMEN </a></li>
+            <li class="category__item"><a href="#"> KIDS </a></li>
+            <li class="category__item"><a href="#"> CUSTOM </a></li>
           </ul>
 
           <ul class="help__list">
-            <li class="help__item">위시리스트</li>
-            <li class="help__item">로그인</li>
-            <li class="help__item">매장찾기</li>
-            <li class="help__item">고객센터</li>
+            <li class="help__item"><a href="#"> 위시리스트</a></li>
+            <li class="help__item"><a href="#"> 로그인</a></li>
+            <li class="help__item"><a href="#"> 매장찾기</a></li>
+            <li class="help__item"><a href="#"> 고객센터</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
+    </aside>
+
+    <aside class="popup">
+      <div class="popup__image__wrap">      
+        <img src="./images/popup.jpg" alt="팝업배너">
+      </div> 
+      <div class="popup__button__wrap">
+        <button class="btn--close--today">오늘 하루 보지 않기</button>
+        <button class="btn--close--once">닫기</button>
+      </div>         
     </aside>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -851,5 +863,6 @@
     <script src="js/news-slide.js"></script>
     <script src="js/header.js"></script>
     <script src="js/side-nav.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>

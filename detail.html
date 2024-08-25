@@ -33,23 +33,25 @@
           <span class="visually-hidden">반스</span>
         </a>
 
-        <ul class="align header__nav-list lg-only">
-          <li class="header__nav-item">
-            <a href="#">NEW</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#">MEN</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#">WOMEN</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#">KIDS</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#">CUSTOM</a>
-          </li>
-        </ul>
+        <nav class="header__nav lg-only" aria-label="카테고리">
+          <ul class="align header__nav-list">
+            <li class="header__nav-item">
+              <a href="#"><span class="visually-hidden">신상품</span>NEW</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#"><span class="visually-hidden">남성</span>MEN</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#"><span class="visually-hidden">여성</span>WOMEN</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#"><span class="visually-hidden">키즈</span>KIDS</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#"><span class="visually-hidden">커스텀</span>CUSTOM</a>
+            </li>
+          </ul>
+        </nav>
 
         <div class="align lg-hidden">
           <button class="btn--cart">
@@ -60,15 +62,20 @@
           </button>
         </div>
 
-        <div class="header__search lg-only">
+        <form class="header__search lg-only" role="search">
           <input type="text" class="search-input" placeholder="search..." />
-          <button class="btn--search"></button>
-        </div>
+          <button class="btn--search">
+            <span class="visually-hidden">검색</span>
+          </button>
+        </form>
       </div>
     </header>
 
+
+
+
     <main class="m8">
-      <div class="product">
+      <section class="product">
         <!-- 썸네일 및 상품 정보 -->
         <div class="product__thumb-wrap">
           <div class="product__thumb">
@@ -454,7 +461,7 @@
         </div>
 
         <!-- 상품 옵션 -->
-        <div class="product__option">
+        <section class="product__option">
           <div class="product__info lg-only">
             <div class="product__info__title">
               트라이 톤 Sport Low 스포츠 로우
@@ -463,15 +470,15 @@
             <div class="product__info__price">85,000 원</div>
           </div>
 
-          <div class="product__color">
+          <section class="product__color">
             <div class="product__option-title">색상</div>
             <div class="product__color-wrap">
               <div class="product__color-item green is-select"></div>
               <div class="product__color-item purple"></div>
             </div>
-          </div>
+          </section>
 
-          <div class="product__size">
+          <section class="product__size">
             <div class="align both">
               <div class="product__option-title">사이즈</div>
               <a href="#" class="product__size-guide">사이즈 가이드</a>
@@ -599,7 +606,7 @@
                 />
               </div>
             </div>
-          </div>
+          </section>
 
           <div class="product__btns">
             <button class="cart">장바구니</button>
@@ -678,8 +685,8 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
+      </section>
 
       <div class="suggest lg-hidden">
         <div class="align both">
@@ -695,91 +702,91 @@
           <ul class="swiper-wrapper">
             <li class="product-item swiper-slide">
               <a href="#">
-                <div class="thumb">
+                <figure class="thumb">
                   <img src="./images/new01.jpg" class="thumb--primary" alt="" />
                   <img
                     src="./images/new01-hover.jpeg"
                     class="thumb--hover"
                     alt=""
                   />
-                </div>
+                </figure>
                 <div class="info">
-                  <div class="title">
+                  <h5 class="title">
                     <span class="visually-hidden">상품명</span> 스타일 93 STYLE
                     93
-                  </div>
-                  <div class="price">
+                  </h5>
+                  <p class="price">
                     <span class="visually-hidden">가격</span>75,000 원
-                  </div>
+                  </p>
                 </div>
               </a>
             </li>
             <li class="product-item swiper-slide">
               <a href="#">
-                <div class="thumb">
+                <figure class="thumb">
                   <img src="./images/new02.jpg" class="thumb--primary" alt="" />
                   <img
                     src="./images/new02-hover.jpeg"
                     class="thumb--hover"
                     alt=""
                   />
-                </div>
+                </figure>
                 <div class="info">
-                  <div class="title">
+                  <h5 class="title">
                     <span class="visually-hidden">상품명</span>키즈 Old Skool
                     올드스쿨 V 플라워
-                  </div>
-                  <div class="price">
+                  </h5>
+                  <p class="price">
                     <span class="visually-hidden">가격</span>65,000 원
-                  </div>
+                  </p>
                 </div>
               </a>
             </li>
             <li class="product-item swiper-slide">
               <a href="#">
-                <div class="thumb">
+                <figure class="thumb">
                   <img src="./images/new03.jpg" class="thumb--primary" alt="" />
                   <img
                     src="./images/new03-hover.jpeg"
                     class="thumb--hover"
                     alt=""
                   />
-                </div>
+                </figure>
                 <div class="info">
-                  <div class="title">
+                  <h5 class="title">
                     <span class="visually-hidden">상품명</span> 트라이 톤 Sport
                     Low 스포츠 로우
-                  </div>
-                  <div class="price">
+                  </h5>
+                  <p class="price">
                     <span class="visually-hidden">가격</span>85,000 원
-                  </div>
+                  </p>
                 </div>
               </a>
             </li>
             <li class="product-item swiper-slide">
               <a href="#">
-                <div class="thumb">
+                <figure class="thumb">
                   <img src="./images/new04.jpg" class="thumb--primary" alt="" />
                   <img
                     src="./images/new04-hover.jpeg"
                     class="thumb--hover"
                     alt=""
                   />
-                </div>
+                </figure>
                 <div class="info">
-                  <div class="title">
+                  <h5 class="title">
                     <span class="visually-hidden">상품명</span> AVE(에이브이)
                     2.0 니트
-                  </div>
-                  <div class="price">
+                  </h5>
+                  <p class="price">
                     <span class="visually-hidden">가격</span>165,000 원
-                  </div>
+                  </p>
                 </div>
               </a>
             </li>
             <li class="product-item swiper-slide">
               <a href="#">
-                <div class="thumb">
+                <figure class="thumb">
                   <img
                     src="./images/new05.jpeg"
                     class="thumb--primary"
@@ -790,15 +797,15 @@
                     class="thumb--hover"
                     alt=""
                   />
-                </div>
+                </figure>
                 <div class="info">
-                  <div class="title">
+                  <h5 class="title">
                     <span class="visually-hidden">상품명</span> [TDC 컬렉션]
                     Sport 73 스포츠 73 LX
-                  </div>
-                  <div class="price">
+                  </h5>
+                  <p class="price">
                     <span class="visually-hidden">가격</span>115,000 원
-                  </div>
+                  </p>
                 </div>
               </a>
             </li>
@@ -808,7 +815,7 @@
 
       <div class="recent lg-hidden">
         <div class="align both">
-          <div class="section-title">최근 본 상품</div>
+          <h4 class="section-title">최근 본 상품</h4>
 
           <div class="align">
             <button class="btn--chevron-left"></button>
@@ -820,7 +827,7 @@
           <ul class="swiper-wrapper">
             <li class="product-item swiper-slide">
               <a href="#">
-                <div class="thumb">
+                <figure class="thumb">
                   <img
                     src="./images/best01.jpg"
                     class="thumb--primary"
@@ -831,21 +838,21 @@
                     class="thumb--hover"
                     alt=""
                   />
-                </div>
+                </figure>
                 <div class="info">
-                  <div class="title">
+                  <h5 class="title">
                     <span class="visually-hidden">상품명</span> 코어클래식 ERA
                     에라
-                  </div>
-                  <div class="price">
+                  </h5>
+                  <p class="price">
                     <span class="visually-hidden">가격</span>59,000 원
-                  </div>
+                  </p>
                 </div>
               </a>
             </li>
             <li class="product-item swiper-slide">
               <a href="#">
-                <div class="thumb">
+                <figure class="thumb">
                   <img
                     src="./images/best02.jpg"
                     class="thumb--primary"
@@ -856,21 +863,21 @@
                     class="thumb--hover"
                     alt=""
                   />
-                </div>
+                </figure>
                 <div class="info">
-                  <div class="title">
+                  <h5 class="title">
                     <span class="visually-hidden">상품명</span>코어클래식
                     AUTHENTIC 어센틱
-                  </div>
-                  <div class="price">
+                  </h5>
+                  <p class="price">
                     <span class="visually-hidden">가격</span>59,000 원
-                  </div>
+                  </p>
                 </div>
               </a>
             </li>
             <li class="product-item swiper-slide">
               <a href="#">
-                <div class="thumb">
+                <figure class="thumb">
                   <img
                     src="./images/best03.jpg"
                     class="thumb--primary"
@@ -881,21 +888,21 @@
                     class="thumb--hover"
                     alt=""
                   />
-                </div>
+                </figure>
                 <div class="info">
-                  <div class="title">
+                  <h5 class="title">
                     <span class="visually-hidden">상품명</span> 코어클래식 OLD
                     SKOOL 올드스쿨
-                  </div>
-                  <div class="price">
+                  </h5>
+                  <p class="price">
                     <span class="visually-hidden">가격</span>69,000 원
-                  </div>
+                  </p>
                 </div>
               </a>
             </li>
             <li class="product-item swiper-slide">
               <a href="#">
-                <div class="thumb">
+                <figure class="thumb">
                   <img
                     src="./images/best04.jpg"
                     class="thumb--primary"
@@ -906,21 +913,21 @@
                     class="thumb--hover"
                     alt=""
                   />
-                </div>
+                </figure>
                 <div class="info">
-                  <div class="title">
+                  <h5 class="title">
                     <span class="visually-hidden">상품명</span> 코어클래식
                     Slip-On 체커보드 슬립온
-                  </div>
-                  <div class="price">
+                  </h5>
+                  <p class="price">
                     <span class="visually-hidden">가격</span>59,000 원
-                  </div>
+                  </p>
                 </div>
               </a>
             </li>
             <li class="product-item swiper-slide">
               <a href="#">
-                <div class="thumb">
+                <figure class="thumb">
                   <img
                     src="./images/best05.jpg"
                     class="thumb--primary"
@@ -931,15 +938,15 @@
                     class="thumb--hover"
                     alt=""
                   />
-                </div>
+                </figure>
                 <div class="info">
-                  <div class="title">
+                  <h5 class="title">
                     <span class="visually-hidden">상품명</span> 코어클래식
                     Slip-On 솔리드 슬립온
-                  </div>
-                  <div class="price">
+                  </h5>
+                  <p class="price">
                     <span class="visually-hidden">가격</span>59,000 원
-                  </div>
+                  </p>
                 </div>
               </a>
             </li>
@@ -948,13 +955,17 @@
       </div>
     </main>
 
-    <!-- 하단 메뉴 -->
-    <div class="bottom-menu">
+
+
+        <!-- 하단 메뉴 -->
+    <aside class="bottom-menu">
       <div class="bottom-menu__list">
         <div class="bottom-menu__item">
           <div class="align both">
             <p class="title">ABOUT</p>
-            <button class="btn--bottom"></button>
+            <button class="btn--bottom">
+              <span class="visually-hidden">펼치기</span>
+            </button>
           </div>
 
           <ul class="nest-menu__list">
@@ -965,7 +976,9 @@
         <div class="bottom-menu__item">
           <div class="align both">
             <p class="title">SHOPPING</p>
-            <button class="btn--bottom"></button>
+            <button class="btn--bottom">
+              <span class="visually-hidden">펼치기</span>
+            </button>
           </div>
 
           <ul class="nest-menu__list">
@@ -976,7 +989,9 @@
         <div class="bottom-menu__item">
           <div class="align both">
             <p class="title">LEGAL</p>
-            <button class="btn--bottom"></button>
+            <button class="btn--bottom">
+              <span class="visually-hidden">펼치기</span>
+            </button>
           </div>
 
           <ul class="nest-menu__list">
@@ -988,7 +1003,9 @@
         <div class="bottom-menu__item">
           <div class="align both">
             <p class="title">CATEGORY</p>
-            <button class="btn--bottom"></button>
+            <button class="btn--bottom">
+              <span class="visually-hidden">펼치기</span>
+            </button>
           </div>
 
           <ul class="nest-menu__list">
@@ -1004,15 +1021,15 @@
       </div>
 
       <div class="bottom-menu__cm">
-        <div class="news-letter">
+        <section class="news-letter">
           <div class="title">VANS NEWS LETTER</div>
 
           <div class="news-letter__input">
             <input type="text" placeholder="이메일 주소" />
             <button class="btn--right"></button>
           </div>
-        </div>
-        <div class="follow">
+        </section>
+        <section class="follow">
           <div class="title">FOLLOW VANS</div>
 
           <div class="follow__icons">
@@ -1029,9 +1046,9 @@
               <span class="visually-hidden">인스타그램 바로가기</span>
             </div>
           </div>
-        </div>
+        </section>
       </div>
-    </div>
+    </aside>
 
     <!-- 푸터 -->
 
@@ -1044,22 +1061,22 @@
     <aside class="side-nav lg-hidden">
       <div class="side-nav__wrap">
         <button class="btn--close"></button>
-        <div class="side-nav__content">
+        <nav class="side-nav__content">
           <ul class="category__list">
-            <li class="category__item">NEW</li>
-            <li class="category__item">MEN</li>
-            <li class="category__item">WOMEN</li>
-            <li class="category__item">KIDS</li>
-            <li class="category__item">CUSTOM</li>
+            <li class="category__item"><a href="#"> NEW </a></li>
+            <li class="category__item"><a href="#"> MEN </a></li>
+            <li class="category__item"><a href="#"> WOMEN </a></li>
+            <li class="category__item"><a href="#"> KIDS </a></li>
+            <li class="category__item"><a href="#"> CUSTOM </a></li>
           </ul>
 
           <ul class="help__list">
-            <li class="help__item">위시리스트</li>
-            <li class="help__item">로그인</li>
-            <li class="help__item">매장찾기</li>
-            <li class="help__item">고객센터</li>
+            <li class="help__item"><a href="#"> 위시리스트</a></li>
+            <li class="help__item"><a href="#"> 로그인</a></li>
+            <li class="help__item"><a href="#"> 매장찾기</a></li>
+            <li class="help__item"><a href="#"> 고객센터</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
     </aside>
 
