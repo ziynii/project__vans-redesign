@@ -39,8 +39,11 @@
       &__item {
         @include h4;
         padding: rem(12) 0;
-        color: $grey700;
         cursor: pointer;
+        
+        a {
+          color: $grey700;
+        }
       }
     }
 
@@ -52,8 +55,11 @@
       &__item {
         @include b2;
         padding: rem(8) 0;
-        color: $grey500;
         cursor: pointer;
+        
+        a {
+          color: $grey500;
+        }
       }
     }
   }
