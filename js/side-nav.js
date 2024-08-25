@@ -1,7 +1,5 @@
 $(document).ready(function () {
-  console.log("reday");
   $(".btn--menu").click(function () {
-    console.log("hi");
     $(".side-nav").addClass("is-active");
     $(".overlay").addClass("is-active");
     $(".side-nav__wrap").addClass("is-active");
