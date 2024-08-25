@@ -15,7 +15,6 @@ $(document).ready(function () {
 // 상품정보 아코디언
 $(document).ready(function () {
   $(".product__notice-item").click(function (event) {
-    console.log("hi");
     event.stopPropagation();
 
     $(this).find(".content").toggleClass("is-active");
