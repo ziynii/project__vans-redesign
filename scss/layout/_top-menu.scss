@@ -17,11 +17,16 @@
   &__item {
     padding: rem(12) 0;
 
+    &:not(&:first-child) {
+      a {
+        border-left: rem(1) solid $white;
+      }
+    }
+
     a {
       @include b4;
       color: $white;
-      border-left: rem(1) solid $white;
-      padding: 0 rem(8);
+      padding: 0 rem(12);
 
       &:hover {
         color: $grey300;
