@@ -1762,9 +1762,14 @@ body {
 }
 .side-nav .btn--close {
   align-self: end;
+  flex-shrink: 0;
 }
 .side-nav__content {
   margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 .side-nav__content .category__item {
   font-weight: 700;
@@ -1775,9 +1780,6 @@ body {
 }
 .side-nav__content .category__item a {
   color: #434343;
-}
-.side-nav__content .help__list {
-  margin-top: 7.2rem;
 }
 .side-nav__content .help__item {
   font-size: 1.6rem;
