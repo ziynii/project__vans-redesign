@@ -1130,6 +1130,7 @@ body {
   }
 }
 .ad__content-btn {
+  display: inline-block;
   margin-top: 4.8rem;
   background-color: transparent;
   transition: 0.25s;
